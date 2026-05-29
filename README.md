@@ -181,4 +181,6 @@ To reproduce the experiments, follow steps in /fine_tuning/sva_qlora_finetune.ip
 
 ## License
 
-This repository is released for research and educational purposes. Please consult the accompanying license file for usage restrictions and third-party dependencies.
+This repository is provided solely for anonymous artifact evaluation
+associated with the submitted manuscript. Redistribution and public
+release policies will be finalized upon publication.
