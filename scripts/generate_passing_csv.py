@@ -19,7 +19,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-BASE_DIR = "/home/ab2113/malik25_26"
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 # Regex to count SVA properties
 RE_ASSERT = re.compile(r'\bassert\s+property\b', re.IGNORECASE)

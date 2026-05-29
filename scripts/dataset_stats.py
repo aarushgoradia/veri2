@@ -1999,7 +1999,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Generate statistical charts for metrex and veri_thoughts datasets."
     )
-    # Default base-dir to the parent of this script's directory (i.e. malik25_26/)
+    # Default base-dir to the parent of this script's directory (project root)
     _script_dir = os.path.dirname(os.path.abspath(__file__))
     _default_base = os.path.dirname(_script_dir)
 
