@@ -2,18 +2,22 @@
 
 ## Overview
 
-Veri2 is a synthetic RTL–SVA dataset created through knowledge distillation from GPT-5 and filtered using a two-stage Cadence JasperGold verification pipeline. The project investigates whether formally verified training data can improve SystemVerilog Assertion (SVA) generation compared to larger but noisier datasets.
+Veri2 is a synthetic RTL–SVA dataset distilled from GPT-5 and filtered by a two-stage Cadence JasperGold pipeline (syntax check, then formal proof). It asks one question: does formally verified training data beat larger but noisier data for SystemVerilog Assertion (SVA) generation?
 
-The repository contains:
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/tiers-dark.svg">
+  <img alt="dataset tiers: all 45,451 SVAs, syntax pass 42,125, verified 18,494; formal yield 50.2% for the fine-tuned 7B model vs 41.4% for GPT-5" src="docs/tiers-light.svg">
+</picture>
 
-* Dataset generation scripts
-* GPT-5 batch API generation infrastructure
-* Fine-tuning and inference code
-* Generated adapter outputs
-* Three Veri2 dataset tiers
-* Evaluation artifacts used in the paper
+**Result:** Qwen2.5-Coder-7B-Instruct fine-tuned with QLoRA on the smallest, fully verified tier reaches **50.2% formal yield**, ahead of the GPT-5 teacher (**41.4%**) and of adapters trained on the larger *All* and *Syntax Pass* tiers. Data quality beats data quantity here.
 
-The central hypothesis explored in this work is that **data quality outweighs data quantity** for SVA generation. Models trained on formally verified assertions consistently outperform models trained on substantially larger unfiltered datasets.
+This repository contains:
+
+* the three Veri2 dataset tiers (`veri2/`)
+* GPT-5 batch generation scripts (`generation/`)
+* QLoRA fine-tuning and inference notebooks (`fine_tuning/`)
+* JasperGold checking and analysis scripts (`scripts/`)
+* raw model outputs for every evaluated model (`inference_outputs/`)
 
 ---
 
@@ -175,12 +179,16 @@ The strongest-performing adapter is trained on the **Verified** dataset tier and
 
 ## Reproducibility
 
-To reproduce the experiments, follow steps in /fine_tuning/sva_qlora_finetune.ipynb using data from /veri2.
+1. **Train:** run `fine_tuning/sva_qlora_finetune.ipynb` on a tier from `veri2/` (`all`, `syntax_pass` or `verified`; each has `train` / `validation` / `test` JSONL splits).
+2. **Generate:** run `fine_tuning/sva_inference.ipynb` to write one `sva.sv` per test module, laid out like `inference_outputs/<model>/<id>/`.
+3. **Check:** `scripts/check_all.sh` runs the JasperGold syntax and formal checks (`jasper_syntax_check.tcl`, `jasper_verif_check.tcl`); `scripts/run_check_all.sbatch` does the same on a Slurm cluster. JasperGold needs a Cadence license.
 
 ---
 
+## Paper
+
+We're planning to submit the paper to arXiv. A link and citation will go here once it's posted.
+
 ## License
 
-This repository is provided solely for anonymous artifact evaluation
-associated with the submitted manuscript. Redistribution and public
-release policies will be finalized upon publication.
+To be decided when the paper is posted.
