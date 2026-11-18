@@ -1,0 +1,27 @@
+all:
+  pairs                      5774
+  assertions                 45440
+  assertions per pair (mean) 7.9
+  RTL LoC mean / median / max 23.4 / 18 / 229
+  SVA LoC mean               37.8
+  sequential modules         37.1%
+  assertions with implication 78.6%
+  multi-cycle assertions     36.6%
+syntax_pass:
+  pairs                      5412
+  assertions                 42116
+  assertions per pair (mean) 7.8
+  RTL LoC mean / median / max 23.3 / 18 / 229
+  SVA LoC mean               37.6
+  sequential modules         37.8%
+  assertions with implication 79.1%
+  multi-cycle assertions     37.2%
+verified:
+  pairs                      2954
+  assertions                 18494
+  assertions per pair (mean) 6.3
+  RTL LoC mean / median / max 20.6 / 17 / 229
+  SVA LoC mean               29.8
+  sequential modules         36.1%
+  assertions with implication 77.6%
+  multi-cycle assertions     25.8%
