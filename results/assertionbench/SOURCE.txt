@@ -1,0 +1,4 @@
+AssertionBench designs are not redistributed here.
+Upstream: https://github.com/achieve-lab/assertion_data_for_LLM
+Revision: 07840fbbfe882b67fb7c549bdb7fe1328aadd6d2
+designs.csv gives the path of each design inside that repository.

@@ -67,10 +67,8 @@ echo "Only: ${ONLY_SUBDIR:-all}"
 echo "Parent dir: $PARENT_DIR"
 
 # ── Environment setup ────────────────────────────────────────
-module purge
-module load cadence/cadence_license
-
-export JASPER_HOME=/usr/licensed/cadence-20210126/jasper_2021.03
+# Set JASPER_HOME to your JasperGold 2021.03 installation (and load its license module if needed).
+export JASPER_HOME="${JASPER_HOME:?Set JASPER_HOME to the JasperGold installation}"
 export PATH="$PATH:$JASPER_HOME/bin"
 
 # Sanity checks

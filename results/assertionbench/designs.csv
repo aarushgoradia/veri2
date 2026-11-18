@@ -1,0 +1,95 @@
+id,top,upstream_path,dependencies,rtl_lines,reset_expression,evaluated
+fht_1d_x8,fht_1d_x8,Jasper_results/arithmetic_core_2d_fht/fht_1d_x8/fht_1d_x8.v,Jasper_results/arithmetic_core_2d_fht/signed_mult_const_asic/signed_mult_const_asic.v;Jasper_results/arithmetic_core_2d_fht/signed_mult_const_fpga/signed_mult_const_fpga.v,626,!rstn,no (prompt longer than the input limit)
+fht_bfly,fht_bfly,Jasper_results/arithmetic_core_2d_fht/fht_bfly/fht_bfly.v,,135,!rstn,yes
+fht_bfly_noFF,fht_bfly_noFF,Jasper_results/arithmetic_core_2d_fht/fht_bfly_noFF/fht_bfly_noFF.v,,135,!rstn,yes
+signed_mult_const_asic,signed_mult_const_asic,Jasper_results/arithmetic_core_2d_fht/signed_mult_const_asic/signed_mult_const_asic.v,,77,,yes
+signed_mult_const_fpga,signed_mult_const_fpga,Jasper_results/arithmetic_core_2d_fht/signed_mult_const_fpga/signed_mult_const_fpga.v,,76,!rstn,yes
+bitNegator,bitNegator,Jasper_results/arithmetic_core_8-bit_piepelined_processor/bitNegator/bitNegator.v,,235,,yes
+ramBit,bitRam,Jasper_results/arithmetic_core_8-bit_piepelined_processor/bitRam/ramBit.v,,262,reset,yes
+byteNegator,byteNegator,Jasper_results/arithmetic_core_8-bit_piepelined_processor/byteNegator/byteNegator.v,,237,,yes
+ramByte,byteRam,Jasper_results/arithmetic_core_8-bit_piepelined_processor/byteRam/ramByte.v,,266,reset,yes
+inputReg,inputRegister,Jasper_results/arithmetic_core_8-bit_piepelined_processor/inputRegister/inputReg.v,,397,,yes
+outputReg,outputReg,Jasper_results/arithmetic_core_8-bit_piepelined_processor/outputReg/outputReg.v,,427,reset,yes
+ppReg1,ppReg1,Jasper_results/arithmetic_core_8-bit_piepelined_processor/ppReg1/ppReg1.v,,236,,yes
+tcLoad,tcLoad,Jasper_results/arithmetic_core_8-bit_piepelined_processor/tcLoad/tcLoad.v,,233,,yes
+tcReset,tcReset,Jasper_results/arithmetic_core_8-bit_piepelined_processor/tcReset/tcReset.v,,235,,yes
+uartRec,uartRec,Jasper_results/arithmetic_core_8-bit_piepelined_processor/uartRec/uartRec.v,,322,reset,yes
+uartTrans,uartTrans,Jasper_results/arithmetic_core_8-bit_piepelined_processor/uartTrans/uartTrans.v,,348,reset,yes
+key_expander,key_expander,Jasper_results/arithmetic_core_aes128/key_expander/key_expander.v,,180,,yes
+cavlc_fsm,cavlc_fsm,Jasper_results/arithmetic_core_cavlc_decoder/cavlc_fsm/cavlc_fsm.v,,185,!rst_n,yes
+cavlc_len_gen,cavlc_len_gen,Jasper_results/arithmetic_core_cavlc_decoder/cavlc_len_gen/cavlc_len_gen.v,,107,,yes
+cavlc_read_levels,cavlc_read_levels,Jasper_results/arithmetic_core_cavlc_decoder/cavlc_read_levels/cavlc_read_levels.v,,423,!rst_n,yes
+cavlc_read_total_coeffs,cavlc_read_total_coeffs,Jasper_results/arithmetic_core_cavlc_decoder/cavlc_read_total_coeffs/cavlc_read_total_coeffs.v,,1220,!rst_n,no (prompt longer than the input limit)
+cavlc_read_total_zeros,cavlc_read_total_zeros,Jasper_results/arithmetic_core_cavlc_decoder/cavlc_read_total_zeros/cavlc_read_total_zeros.v,,739,,no (prompt longer than the input limit)
+ca_prng,ca_prng,Jasper_results/arithmetic_core_cellular_automata_prng/ca_prng/ca_prng.v,,1312,!reset_n,no (prompt longer than the input limit)
+mux4to1,mux4to1,Jasper_results/arithmetic_core_common_files/mux4to1/mux4to1.v,,47,,yes
+PSGBusArb,PSGBusArb,Jasper_results/arithmetic_core_common_files/PSGBusArb/PSGBusArb.v,,184,rst,yes
+PSGChannelSummer,PSGChannelSummer,Jasper_results/arithmetic_core_common_files/PSGChannelSummer/PSGChannelSummer.v,,44,,yes
+PSGFilter,PSGFilter,Jasper_results/arithmetic_core_common_files/PSGFilter/PSGFilter.v,,107,rst,yes
+PSGMasterVolumeControl,PSGMasterVolumeControl,Jasper_results/arithmetic_core_common_files/PSGMasterVolumeControl/PSGMasterVolumeControl.v,,47,rst_i,yes
+PSGOutputSummer,PSGOutputSummer,Jasper_results/arithmetic_core_common_files/PSGOutputSummer/PSGOutputSummer.v,,38,,yes
+PSGShaper,PSGShaper,Jasper_results/arithmetic_core_common_files/PSGShaper/PSGShaper.v,,42,,yes
+bit_reversal,bit_reversal,Jasper_results/arithmetic_core_crcahb/bit_reversal/bit_reversal.v,,120,,yes
+crc_comb,crc_comb,Jasper_results/arithmetic_core_crcahb/crc_comb/crc_comb.v,,134,,yes
+crc_control_unit,crc_control_unit,Jasper_results/arithmetic_core_crcahb/crc_control_unit/crc_control_unit.v,,346,!rst_n,yes
+host_interface,host_interface_aes,Jasper_results/arithmetic_core_aes128/host_interface_aes/host_interface.v,,463,,yes
+fpu_exceptions,fpu_exceptions,Jasper_results/arithmetic_core_double_fpu_verilog/fpu_exceptions/fpu_exceptions.v,,281,rst,yes
+fpu_sub,fpu_sub,Jasper_results/arithmetic_core_double_fpu_verilog/fpu_sub/fpu_sub.v,,222,rst,yes
+qadd,qadd,Jasper_results/arithmetic_core_fixed_point_arithmetic_modules/qadd/qadd.v,,75,,yes
+qmult,qmult,Jasper_results/arithmetic_core_fixed_point_arithmetic_modules/qmult/qmult.v,,137,,yes
+qtwosComp,qtwosComp,Jasper_results/arithmetic_core_fixed_point_arithmetic_modules/qtwosComp/qtwosComp.v,,56,,yes
+dff_3_pipe,dff_3_pipe,Jasper_results/arithmetic_core_fpga-based_median_filter/dff_3_pipe/dff_3_pipe.v,,62,!rst_n,yes
+dual_port_ram,dual_port_ram,Jasper_results/arithmetic_core_fpga-based_median_filter/dual_port_ram/dual_port_ram.v,,58,,yes
+node,node,Jasper_results/arithmetic_core_fpga-based_median_filter/node/node.v,,85,,yes
+dpll,dpll,Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/dpll/dpll.v,Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/dpll/freqdivider.v;Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/dpll/phasecomparator.v;Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/dpll/variableresetrandomwalkfilter.v,219,,yes
+freqdivider,freqdivider,Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/freqdivider/freqdivider.v,,39,,yes
+variableresetrandomwalkfilter,variableresetrandomwalkfilter,Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/variableresetrandomwalkfilter/variableresetrandomwalkfilter.v,,127,,yes
+clean_rst,clean_rst,Jasper_results/communication_controller_1000base-x_ieee_802.3-2008_clause_36-physical_codi/clean_rst/clean_rst.v,,65,,yes
+decoder_8b10b,decoder_8b10b,Jasper_results/communication_controller_1000base-x_ieee_802.3-2008_clause_36-physical_codi/decoder_8b10b/decoder_8b10b.v,,364,reset,yes
+encoder_8b10b,encoder_8b10b,Jasper_results/communication_controller_1000base-x_ieee_802.3-2008_clause_36-physical_codi/encoder_8b10b/encoder_8b10b.v,,269,reset,yes
+ge_1000baseX_mdio,ge_1000baseX_mdio,Jasper_results/communication_controller_1000base-x_ieee_802.3-2008_clause_36-physical_codi/ge_1000baseX_mdio/ge_1000baseX_mdio.v,,496,reset,yes
+ge_1000baseX_rx,ge_1000baseX_rx,Jasper_results/communication_controller_1000base-x_ieee_802.3-2008_clause_36-physical_codi/ge_1000baseX_rx/ge_1000baseX_rx.v,,1179,reset,no (prompt longer than the input limit)
+ge_1000baseX_sync,ge_1000baseX_sync,Jasper_results/communication_controller_1000base-x_ieee_802.3-2008_clause_36-physical_codi/ge_1000baseX_sync/ge_1000baseX_sync.v,,592,reset,no (prompt longer than the input limit)
+eth_cop,eth_cop,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_cop/eth_cop.v,,402,wb_rst_i,yes
+eth_crc,eth_crc,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_crc/eth_crc.v,,143,Reset,yes
+eth_l3_checksum,eth_l3_checksum,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_l3_checksum/eth_l3_checksum.v,,86,Reset,yes
+eth_random,eth_random,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_random/eth_random.v,,140,Reset,yes
+eth_receivecontrol,eth_receivecontrol,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_receivecontrol/eth_receivecontrol.v,,438,RxReset,yes
+eth_rxaddrcheck,eth_rxaddrcheck,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_rxaddrcheck/eth_rxaddrcheck.v,,265,Reset,yes
+eth_txcounters,eth_txcounters,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_txcounters/eth_txcounters.v,,270,Reset,yes
+eth_clockgen,eth_clockgen,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/eth_clockgen/eth_clockgen.v,,141,Reset,yes
+eth_miim,eth_miim,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/eth_miim/eth_miim.v,,942,Reset,no (prompt longer than the input limit)
+eth_outputcontrol,eth_outputcontrol,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/eth_outputcontrol/eth_outputcontrol.v,,160,Reset,yes
+eth_shiftreg,eth_shiftreg,Jasper_results/communication_controller_100_mb-s_ethernet_mac_layer_switch/eth_shiftreg/eth_shiftreg.v,,202,Reset,yes
+flow_ctrl,flow_ctrl,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/flow_ctrl/flow_ctrl.v,,200,Reset,yes
+MAC_rx_ctrl,MAC_rx_ctrl,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/MAC_rx_ctrl/MAC_rx_ctrl.v,,534,Reset,yes
+Phy_sim,Phy_sim,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/Phy_sim/Phy_sim.v,,99,,yes
+Ramdon_gen,Ramdon_gen,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/Ramdon_gen/Ramdon_gen.v,,121,Reset,yes
+reg_int_sim,reg_int_sim,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/reg_int_sim/reg_int_sim.v,,133,Reset,yes
+RMON_addr_gen,RMON_addr_gen,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/RMON_addr_gen/RMON_addr_gen.v,,293,Reset,yes
+RMON_ctrl,RMON_CTRL,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/RMON_ctrl/RMON_ctrl.v,,287,Reset,yes
+ack_counter,ack_counter,Jasper_results/communication_controller_10g_ethernet_mac/ack_counter/ack_counter.v,,90,reset,yes
+counter,counter,Jasper_results/communication_controller_10g_ethernet_mac/counter/counter.v,,76,reset,yes
+rxClkgen,rxClkgen,Jasper_results/communication_controller_10g_ethernet_mac/rxClkgen/rxClkgen.v,,219,reset,yes
+rxLinkFaultState,rxLinkFaultState,Jasper_results/communication_controller_10g_ethernet_mac/rxLinkFaultState/rxLinkFaultState.v,,302,reset,yes
+rxNumCounter,rxNumCounter,Jasper_results/communication_controller_10g_ethernet_mac/rxNumCounter/rxNumCounter.v,,288,reset,yes
+rxStateMachine,rxStateMachine,Jasper_results/communication_controller_10g_ethernet_mac/rxStateMachine/rxStateMachine.v,,340,reset,yes
+rxStatModule,rxStatModule,Jasper_results/communication_controller_10g_ethernet_mac/rxStatModule/rxStatModule.v,,324,reset,yes
+apb,apb,Jasper_results/communication_controller_apb_to_i2c/apb/apb.v,,172,!PRESETn,yes
+can_btl,can_btl,Jasper_results/communication_controller_can_protocol_controller/can_btl/can_btl.v,,534,rst,yes
+can_crc,can_crc,Jasper_results/communication_controller_can_protocol_controller/can_crc/can_crc.v,,111,,yes
+can_ibo,can_ibo,Jasper_results/communication_controller_can_protocol_controller/can_ibo/can_ibo.v,,85,,yes
+can_register_asyn,can_register_asyn,Jasper_results/communication_controller_can_protocol_controller/can_register_asyn/can_register_asyn.v,,109,rst,yes
+can_register_asyn_syn,can_register_asyn_syn,Jasper_results/communication_controller_can_protocol_controller/can_register_asyn_syn/can_register_asyn_syn.v,,113,rst,yes
+can_register,can_register,Jasper_results/communication_controller_can_protocol_controller/can_register/can_register.v,,104,,yes
+can_register_syn,can_register_syn,Jasper_results/communication_controller_can_protocol_controller/can_register_syn/can_register_syn.v,,106,,yes
+can_acf,can_acf,Jasper_results/communication_controller_can_protocol_controller/can_acf/can_acf.v,,435,rst,no (prompt longer than the input limit)
+Phy_int,Phy_int,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/Phy_int/Phy_int.v,,224,Reset,yes
+fpu_add,fpu_add,Jasper_results/arithmetic_core_double_fpu_verilog/fpu_add/fpu_add.v,,131,rst,yes
+control_unit,control_unit,Jasper_results/arithmetic_core_aes128/control_unit/control_unit.v,,603,!rst_n,yes
+phasecomparator,phasecomparator,Jasper_results/arithmetic_core_hardware_implementation_of_binary_fully_digital_ph/phasecomparator/phasecomparator.v,,32,,yes
+wptr_handler,wptr_handler,Jasper_results/async_FIFO/wptr_handler/wptr_handler.v,,36,!wrst_n,yes
+rptr_handler,rptr_handler,Jasper_results/async_FIFO/rptr_handler/rptr_handler.v,,31,!rrst_n,yes
+synchronizer,synchronizer,Jasper_results/async_FIFO/synchronizer/synchronizer.v,,16,!rst_n,yes
+fifo_mem,fifo_mem,Jasper_results/async_FIFO/fifo_mem/fifo_mem.v,,26,,yes
+MAC_tx_Ctrl,MAC_tx_ctrl,Jasper_results/communication_controller_10_100_1000_mbps_tri-mode_ethernet_mac/MAC_tx_Ctrl/MAC_tx_Ctrl.v,,644,Reset,no (prompt longer than the input limit)
